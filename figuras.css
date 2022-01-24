@@ -1,0 +1,135 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --sm: 12px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  color: aquamarine;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fc;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+p {
+  font-size: var(--lg);
+  color: var(--black);
+  text-align: center;
+  font-weight: bold;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: (1fr 1fr);
+  place-items: center;
+}
+
+.figures > div {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  background-color: white;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 8px;
+  justify-content: space-between;
+  height: 320px;
+}
+
+.cuadrado {
+  grid-column: 1 / 3;
+}
+
+.triangulo {
+  grid-column: 3 / 5;
+}
+
+.circulo {
+  grid-row: 2;
+  grid-column: 2 / 4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin-top: 0;
+}
+label {
+  font-size: var(--sm);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input {
+  height: 14px;
+  font-size: var(--md);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--text-input-field);
+  padding: 4px;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: var(--hospital-green);
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 4px;
+  font-size: var(--sm);
+  color: var(--text-input-field);
+}
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    margin-bottom: 12px;
+  }
+  p {
+    margin-top: 70px;
+    font-size: var(--md);
+  }
+  .figures {
+    height: 100vh;
+  }
+
+  .cuadrado {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .triangulo {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .circulo {
+    grid-row: 3;
+    grid-column: 1;
+  }
+}
