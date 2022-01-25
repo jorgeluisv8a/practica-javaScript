@@ -27,7 +27,7 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 p {
   font-size: var(--lg);
@@ -111,11 +111,10 @@ button {
     margin-bottom: 12px;
   }
   p {
-    margin-top: 70px;
     font-size: var(--md);
   }
   .figures {
-    height: 100vh;
+    height: 100%;
   }
 
   .cuadrado {
